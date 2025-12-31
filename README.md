@@ -46,7 +46,7 @@ Keyboard
 Controller (Generic / DualSense)
 - Movement: Left Stick
 - Shoot: Right Trigger (R2)
-- Boost: A Button (or Square)
+- Boost: A Button (or X)
 - Eagle Strike / Bomb: Triangle or specific button (configurable in code)
 
 Menus support both keyboard (Up/Down/Enter) and controller navigation.
