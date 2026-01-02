@@ -1,89 +1,53 @@
-# Eagle-Strike-2.0
-Complete new build of previous game code
-Eagle Strike
+# Eagle Strike
 
-A fast-paced, retro-style vertical shoot 'em up built with Pygame. 
-Take control of a lone Eagle fighter and battle waves of enemies 
-across three enemy factions: Terminids, Automatons, and Illuminates. 
-Survive escalating waves, collect power-ups, defeat mini-bosses and 
-full bosses, and climb the local leaderboard!
+A fast-paced vertical scrolling shooter (shmup) built with Pygame.  
+Pilot the Eagle fighter against waves of Terminids, Automatons, and Illuminate forces.  
+Destroy enemies, build combos, collect power-ups, defeat bosses, and climb the leaderboard!
 
-Inspired by classic arcade shooters and the chaotic fun of games 
-like Helldivers 2.
+## Quick Overview
 
-Features
+- Classic arcade-style vertical shooter with modern touches
+- Score-based progression with escalating difficulty
+- Varied enemy waves and scripted formations
+- Power-ups, combo multiplier, bombs, and a screen-clearing Eagle Strike special
+- Bosses with phases and unique attacks
+- Mini-boss encounters via dropships
+- Local high score leaderboard and simple achievements
 
-- Three Enemy Factions with unique behaviors and visuals 
-  (Terminids, Automatons, Illuminates)
-- Progressive Stages with increasing difficulty and background tint changes
-- Power-Up System:
-    Rapid Fire (faster shooting)
-    Triple Shot (spread fire)
-    Shield (one free hit)
-    Extra Bomb (screen-clear ability)
-    Extra Life
-- Boost Mechanic – Hold to move faster (drains meter, recharges when not used) *PS5 controller>press Square button
-- Eagle Strike – Ultimate ability that clears or heavily damages enemies 
-  when meter is full *PS5 controller>press Triangle button
-- Mini-Bosses dropped from transports with escalating health and attack patterns
-- Full Boss Battles every ~10,000–15,000 points
-- Random Events (Breach, Patrol, Supply) that change spawn behavior
-- Local Leaderboard – Top 10 scores with 3-letter initials
-- Controller Support (tested with DualSense; generic gamepads should work)
-- Keyboard Controls (fully configurable via code if desired)
-- High-Quality Audio – Multiple music tracks, SFX for shooting, explosions, 
-  power-ups, etc.
-- PyInstaller Compatible – Easy to build as a standalone executable
+## Features
 
-Controls
+- Multiple enemy factions with different visuals and behaviors
+- Formations (lines, arrows, walls, diamonds, crosses) that force active dodging
+- Power-ups:
+  - Rapid Fire (faster shooting)
+  - Triple Shot (spread fire)
+  - Shield (one free hit)
+  - Bomb charges (screen clear on demand)
+  - Extra Life
+- Boost meter for temporary speed bursts
+- Eagle Strike meter (fills with kills) → full-screen nuke
+- Combo system: higher combo = bigger score multiplier (up to 4×)
+- Boss fights every ~20-35k points with breathing room afterward
+- Short "lull" periods after big clears for recovery and tension build-up
+- Persistent local leaderboard and achievements
 
-Keyboard
-- Movement: WASD or Arrow Keys
-- Shoot: Space
-- Boost: Left/Right Shift
-- Eagle Strike / Bomb: Q (uses Eagle meter if full, otherwise consumes a bomb charge)
+## Controls
 
-Controller (Generic / DualSense)
-- Movement: Left Stick
-- Shoot: Right Trigger (R2)
-- Boost: A Button (or X)
-- Eagle Strike / Bomb: Triangle or specific button (configurable in code)
+### Gamepad (tested with Xbox/PlayStation-style controllers)
+- Left stick: Movement
+- Right trigger (R2/RT): Shoot
+- Left trigger (L2/LT): Special (Bomb / Eagle Strike)
+- A / Cross button: Boost
+- L1 / Options button: Pause
 
-Menus support both keyboard (Up/Down/Enter) and controller navigation.
+## How to Run
 
-How to Run
+1. Requirements:
+   - Python 3.8+
+   - Pygame (`pip install pygame`)
 
-Requirements
-- Python 3.8+
-- Pygame (pip install pygame)
-- Run the EagleStrike.exe for seamless operation
+2. Place all asset files (images/*.png, sounds/*.wav) in the same folder as `eagle_strike.py`.
 
+3. Run the game:
 
-Quick Start
-1. Clone or download the repository, or download and run the executable (EagleStrike.exe).
-2. Place all assets (images, sounds) in the appropriate folders relative to eagle_strike.py.
-3. Run:
-   python eagle_strike.py
-
-Building an Executable (Optional)
-The game includes PyInstaller support via resource_path().
-pyinstaller --onefile --add-data "assets;assets" eagle_strike.py
-(Adjust --add-data separator for your OS: ; on Windows, : on macOS/Linux)
-
-Files
-- eagle_strike.py – Main game file
-- leaderboard.json – Saved automatically (top 10 entries)
-- eagle_strike_debug.log – Debug log (overwritten each launch)
-
-Credits
-- Developed by [Milsim Rooster]
-- Assets: Custom or sourced (generated via AI)
-- Sound effects and music: (generated via AI)
-- Built with Pygame
-
-Known Issues / Todo
-- No online leaderboard (local only)
-- Balance tuning ongoing
-- More enemy variety / power-ups possible in future updates
-
-Enjoy diving into the action – for Super Earth!
+4. *easy made for Windows option (download and run the EagleStrike.exe that's included, look for version 2.1.
